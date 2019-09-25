@@ -23,9 +23,14 @@ public class Account
    public void accountActivity(float debit)
    {
        if(debit > accountBalance)
+       {
            System.out.println("Debit amount exceeds account balance");
+       }
+       else
+       {
        accountBalance -= debit;
        System.out.printf("Your New account balance is\n%f\n" , accountBalance );
+       }
    }
     
 }
